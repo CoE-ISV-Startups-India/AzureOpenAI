@@ -50,7 +50,7 @@ print (f'There are {len(data[0].page_content)} characters in your document')
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size = 500,
-    chunk_overlap  = 0,
+    chunk_overlap  = 20,
     length_function = len,
     add_start_index = True,
 )
