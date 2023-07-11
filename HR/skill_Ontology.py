@@ -21,7 +21,7 @@ openai.api_key = " "
 
 # %%
 user_input = input("Enter your prompt: ")
-#eg format for entering user input - skill name: JavaScript, domain : IT and skill area : Programming
+#eg format for entering user input - skill name: C#, domain : IT and skill area : Programming
 # %%
 response = openai.ChatCompletion.create(
   engine="gpt-4",
@@ -39,18 +39,9 @@ response = openai.ChatCompletion.create(
 from pprint import pprint
 pprint(response.choices[0].message['content'])
 
-# %% [markdown]
-# ### Examples of different skill, skill area and domain
 
-# %%
-#skill name: JavaScript, domain : IT and skill area : Programming
-#skill name : Business Intelligence, domain : IT and skill area : AI
-#skill name : Computer Aided Test Tool, domain : IT and skill area : Design skills
-#skill name : DX Studio, domain : IT and skill area : Gaming 
-#skill name : Adobe Photoshop, domain : IT and skill area : Design skills
-#skill_name: Fund Administration, Domain: BFSI and skill area: Mutual Funds
-#skill_name: Fund Accounting, Domain: BFSI and skill area: Mutual Funds
-#skill_name: Fund Management, Domain: BFSI and skill area: Mutual Funds
-#skill_name: Insurance Rating System, Domain: BFSI and skill area: Insurance
+
+
+
 
 
